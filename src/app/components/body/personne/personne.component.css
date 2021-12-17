@@ -1,0 +1,13 @@
+.small-img {
+    border-radius: 15px;
+    width: 5%;
+}
+
+.big-img {
+    border-radius: 5px;
+    width: 45%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

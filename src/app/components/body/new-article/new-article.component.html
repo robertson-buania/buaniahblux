@@ -1,0 +1,106 @@
+<div class="container">
+
+    <div class="login-content" *ngIf="reactiveFormNewArticle">
+        <form [formGroup]="reactiveFormNewArticle" (ngSubmit)="onCreerNewArticle()">
+            <div class="d-flex justify-content-center align-items-center ">
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <img src="../../../../../assets/images/avatar.svg">
+                        <h2 class="title">Créer un Article</h2>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+
+                            <div class="input-div one">
+                                <div class="i">
+                                    <span class="text-dark"> <strong>Nom </strong> </span>
+                                </div>
+
+                                <div class="px-4 mx-4 div">
+
+                                    <input type="text" formControlName="nom" class="input" placeholder="Nom">
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <span class="text-dark"> <strong>Prix </strong> </span>
+                                </div>
+
+                                <div class="px-4 mx-4 div">
+
+                                    <input type="text" formControlName="prix" class="input" placeholder="0.0">
+
+
+
+                                </div>
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <span class="text-dark"> <strong>Quantité</strong> </span>
+                                </div>
+
+                                <div class="px-4 mx-4 div">
+
+                                    <input type="text" formControlName="quantite" class="input" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-div one">
+                                <div class="i">
+                                    <span class="text-dark"> <strong>Disponible </strong> </span>
+                                </div>
+                                <div class="px-4 mx-4 div">
+
+                                    <input type="checkbox" formControlName="disponible" class="input" value="true">
+                                </div>
+
+                            </div>
+                            <div class="input-div one">
+                                <div class="i">
+                                    <span class="text-dark"> <strong>Promotion </strong> </span>
+                                </div>
+                                <div class="px-4 mx-4 div">
+
+                                    <input type="checkbox" formControlName="promotion" class="input" value="true">
+                                </div>
+                            </div>
+                            <div class="input-div pass">
+                                <div class="i">
+                                    <span class="text-dark"> <strong>Type </strong> </span>
+                                </div>
+                                <div class="px-4 mx-4 div">
+
+                                    <div class="form-group">
+                                        <select class="input" formControlName="type" name="" id="">
+                                        <option value="mixte"  >Mixte</option>
+                                        <option value="homme" >Homme</option>
+                                        <option value="femme" >Femme</option>
+                                        <option value="enfant" default="enfant">Enfant</option>
+
+                                      </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Déscription
+                            <textarea formControlName="description" class="form-control" cols="50" rows="3"></textarea>
+                          </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" class="btn" value="Valider">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

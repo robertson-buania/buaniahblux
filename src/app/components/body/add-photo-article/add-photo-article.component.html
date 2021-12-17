@@ -1,0 +1,53 @@
+<div class="container">
+
+    <div class="login-content" *ngIf="reactiveFormAddPhotoToArticle">
+        <form [formGroup]="reactiveFormAddPhotoToArticle" (ngSubmit)="onCreerAddPhotoToArticle()">
+            <div class="d-flex justify-content-center align-items-center ">
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <img src="../../../../../assets/images/avatar.svg">
+                        <h2 class="title">Ajouter une photo</h2>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-div one">
+                                <div class="i">
+                                    <span class="text-dark"> <strong>Type</strong> </span>
+                                </div>
+
+                                <div class="px-5 mx-5 div">
+                                    <div class="form-group">
+                                        <label for="">Type</label>
+                                        <select formControlName="type" class="form-control" name="" id="">
+                                       <option value="photo" >Photo</option>
+                                       <option value="video" >Vidéo</option>
+                                     </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+
+                                <div class="px-5 mx-5 div">
+                                    <div class="col-md-6">
+                                        <input type="file" name="media" class="form-control" onchange="onSelectectedFile($event)">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12">
+                        <input type="submit" class="btn" value="Valider">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

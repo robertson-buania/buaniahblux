@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="mt-5 pt-5">
+        <div class="pt-5"></div>
+    </div>
+
+    <div class="d-flex justify-content-center  align-items-center">
+        <div class="mt-5">
+            <div class="pt-5">
+                <div class="pt-5">
+
+                </div>
+            </div>
+        </div>
+        <div class="login-content" *ngIf="reactiveFormNewCompte">
+            <form [formGroup]="reactiveFormNewCompte" (ngSubmit)="onCreerNewCompte()">
+                <h2 class="title">Créer un compte</h2>
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="px-4 mx-4 div">
+
+                        <input type="text" formControlName="prenom" class="input" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="px-4 mx-4 div">
+
+                        <input type="text" formControlName="nom" class="input" placeholder="Nom">
+                    </div>
+                </div>
+                <div class=" div d-flex justify-content-center align-items-center  ">
+                    <label class="custom-control custom-radio mx-4">
+            <input type="radio" formControlName="sexe" value="homme" class="mx-2 custom-control-input">Homme
+          </label>
+                    <label class="custom-control custom-radio mx-4">
+            <input type="radio" formControlName="sexe" value="femme" class="mx-2 custom-control-input">Femme
+          </label>
+                </div>
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="px-4 mx-4 div">
+
+                        <input type="text" formControlName="email" class="input" placeholder=" Adresse mail">
+                    </div>
+
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="px-4 mx-4 div">
+
+                        <input type="tel" formControlName="telephone" class="input" placeholder="Télephone">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="px-4 mx-4 div">
+
+                        <input type="password" formControlName="motDePasse" class="input" placeholder="Mot de passe">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="px-4 mx-4 div">
+
+                        <input type="password" formControlName="confirmer" class="input" placeholder="Confirmer">
+                    </div>
+                </div>
+                <a (click)="onSeConnecter()">J'ai déjà un compte</a>
+                <input type="submit" class="btn" value="Créer">
+            </form>
+        </div>
+    </div>
+</div>

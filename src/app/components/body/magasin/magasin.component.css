@@ -1,0 +1,61 @@
+ .likes {
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+
+ .likes i {
+     color: orange;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+ }
+
+ .likes i:hover {
+     color: #ff0000;
+ }
+
+ .btn {
+     display: inline-block;
+     color: #ff523b;
+     padding: 8px 1.2rem;
+     margin: 1.2rem 0;
+     border-radius: 1.2rem;
+     -webkit-border-radius: 1.2rem;
+     -moz-border-radius: 1.2rem;
+     -ms-border-radius: 1.2rem;
+     -o-border-radius: 1.2rem;
+ }
+
+ .btn:hover {
+     color: #ff0000;
+ }
+
+ .btnpanier {
+     display: inline-block;
+     background: #ff523b;
+     color: #fff;
+     padding: 0.5rem 1.2rem;
+     margin: 1.2rem 0;
+     border-radius: 1.2rem;
+ }
+
+ .btnpanier:hover {
+     background: #563434;
+ }
+
+ .prix {
+     color: red;
+     font-size: xx-large;
+     font-weight: 900;
+ }
+
+ .texte {
+     margin-right: 5rem;
+     padding-right: 2rem;
+     margin-left: 5rem;
+     padding-left: 2rem;
+     font-weight: 500;
+     font-size: 1.2rem;
+ }

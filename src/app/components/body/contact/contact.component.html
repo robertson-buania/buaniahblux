@@ -1,0 +1,83 @@
+<div class="cont">
+    <div class="mt-5 pt-5">
+        <div class="pt-5"></div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center">
+        <span class="big-circle"></span>
+        <img src="../../../../assets/images/shape.png" class="square" alt="" />
+        <div class="form">
+            <div class="contact-info">
+                <h3 class=" ">Entrons en contact</h3>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorum adipisci recusandae praesentium dicta!
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="../../../../assets/images/location.png" class="icon" alt="" />
+                        <p>92 Paris, France., NY 11553</p>
+                    </div>
+                    <div class="information">
+                        <img src="../../../../assets/images/email.png" class="icon" alt="" />
+                        <p>hbamana2021@gmail.com</p>
+                    </div>
+                    <div class="information d-flex flex-column">
+                        <img src="../../../../assets/images/phone.png" class="icon" alt="" />
+                        <p class="ml">+33 6 15 08 23 39 <span class="mx-2 text-dark">France</span></p>
+                        <p class="ml">+00244926 095 722 <span class="mx-2 text-dark">Angola</span></p>
+                        <p class="ml">+216 51 783 886<span class="mx-2 text-dark">Tunisie</span></p>
+                        <p class="ml">+243 81 64 30 806 <span class="mx-2 text-dark">RDC</span></p>
+
+
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connecte-toi avec nous :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form" *ngIf="reactiveFormContact">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form autocomplete="on" [formGroup]="reactiveFormContact">
+                    <h3 class="title">Nous contacter</h3>
+                    <div class="input-container">
+                        <input type="text" formControlName="nom" placeholder="nom" class="input" />
+
+                    </div>
+                    <div class="input-container">
+                        <input type="email" formControlName="email" placeholder="Adresse mail" class="input" />
+
+                    </div>
+                    <div class="input-container">
+                        <input formControlName="telephone" type="tel" placeholder="Télephone" class="input" />
+
+                        <span></span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea formControlName="unmot" placeholder="Ecrivez-nous un mot" class="input"></textarea>
+
+                        <span></span>
+                    </div>
+                    <input type="submit" value="Envoyer" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

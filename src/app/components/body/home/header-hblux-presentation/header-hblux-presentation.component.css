@@ -1,0 +1,67 @@
+.hblux {
+    background-size: cover;
+    background-image: url('../../../../../assets/images/home.jpg');
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.lux {
+    width: 75%;
+    margin: 5rem auto 0;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.lux h1 {
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+/*
+.hblux-presentation h1 {
+    font-size: 3.2rem;
+}
+
+.hblux-presentation p {
+    width: 400px;
+    font-size: 1.2rem;
+}
+*/
+
+
+/* .hblux-presentation img {
+    height: 800px !important;
+} */
+
+.btn {
+    height: 4rem;
+    width: 16rem;
+    font-size: 1.5rem;
+    bottom: 3rem;
+    right: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #24262b;
+    box-shadow: 0 .5rem 1rem rgba(184, 180, 179, 0.8);
+    color: #fff;
+}
+
+.description p {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    position: relative;
+    margin: 5px;
+}

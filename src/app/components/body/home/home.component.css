@@ -1,0 +1,38 @@
+.hblux-scroll {
+    height: 7em;
+}
+
+.article-1 {
+    background: url("../../../../assets/images/1567772.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.article-2 {
+    background: url("../../../../assets/images/1567665.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.article-3 {
+    background: url("../../../../assets/images/1567750.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.article-4 {
+    background: url("../../../../assets/images/1567806.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.article-5 {
+    background: url("../../../../assets/images/image2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

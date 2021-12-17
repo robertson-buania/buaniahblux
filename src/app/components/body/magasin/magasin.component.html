@@ -1,0 +1,112 @@
+<div class=" mt-5 pt-3">
+    <div class="mt-5 pt-5">
+        <div class="pt-5"></div>
+    </div>
+    <header class="section-header">
+        <h2>Bienvenue au magasin !</h2>
+        <p>HBLUX BOUTIQUE </p>
+    </header>
+    <div class="magasin-hb" *ngIf="articles">
+        <div class="" *ngFor="let article of articles">
+            <div class="row">
+                <div class="d-flex justify-content-start align-items-end ">
+                    <div class="mx-5 px-4">
+                        <header class="section-header">
+                            <p> {{article.nom}} </p>
+                        </header>
+                    </div>
+                </div>
+                <div class="container">
+                    <p class="texte">
+                        {{article.description}}
+                    </p>
+
+                </div>
+                <div class="col-sm-12 col-lg-12">
+                    <div class="d-flex justify-content-around align-items-center flex-row">
+                        <span class="mx-3  btn-sm  likes"> {{article.hbmediaSet[0].likes}} <i class="btn fa fa-heart" aria-hidden="true"></i> </span>
+                        <span class="prix mx-3"> £ {{article.prix}} </span>
+                        <a class="btnpanier" (click)="onAcheterArticle(article)"> Ajouter au panier <i style="font-size: 1.6rem;" class=" fa fa-shopping-cart" aria-hidden="true"></i>   </a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-8">
+                    <section id="values" class="values">
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                        <div class="container" data-aos="fade-up">
+
+                            <div class="row">
+
+                                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="box">
+                                        <img src="../../../../../assets/images/image6.jpeg" class="img-fluid" alt="">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="box">
+                                        <img src="../../../../../assets/images/image8.jpeg " class="img-fluid" alt="">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="box">
+                                        <img src="../../../../../assets/images/image6.jpeg" class="img-fluid" alt="">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="box">
+                                        <img src="../../../../../assets/images/image5.jpeg" class="img-fluid" alt="">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="box">
+                                        <img src="../../../../../assets/images/image7.jpeg" class="img-fluid" alt="">
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+                <div class="col-sm-12 col-lg-4 fixed-left fixe">
+                    <div class="col-12 d-flex justify-content-center align-items-center flex-row">
+                        <img src="../../../../assets/images/image5.jpeg" style="width:60%" />
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-around align-items-center flex-row">
+                    <span class="mx-3  btn-sm  likes">
+                       {{article.couleur}}
+                       </span>
+                    <span class="prix mx-3">  {{article.taille}} </span>
+                </div>
+                <div class="col-sm-12 col-lg-12">
+                    <div class="d-flex justify-content-around align-items-center flex-row">
+                        <span class="mx-3  btn-sm  likes"> {{article.hbmediaSet[0].likes}} <i class="btn fa fa-heart" aria-hidden="true"></i> </span>
+                        <span class="prix mx-3"> £ {{article.prix}} </span>
+                        <a class="btnpanier" (click)="onAcheterArticle(article)"> Ajouter au panier <i style="font-size: 1.6rem;" class=" fa fa-shopping-cart" aria-hidden="true"></i>   </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

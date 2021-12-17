@@ -1,0 +1,35 @@
+<div class="connexion">
+
+    <div class="img">
+
+        <img src="../../../../assets/images/bg.svg">
+        <div *ngIf="message" class="d-block alert alert-warning">{{message}} </div>
+    </div>
+    <div class="login-content" *ngIf="reactiveFormConnexion">
+        <form [formGroup]="reactiveFormConnexion" (ngSubmit)="onSeconnecter()">
+            <img src="../../../../assets/images/avatar.svg">
+            <h2 class="title">Bienvenue chez HBLUX</h2>
+
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <input type="mail" formControlName="email" class="input mb-1" placeholder="Adresse mail">
+                    <span hidden class="alert alert-danger">L'adresse mail n'est pas correct</span>
+                </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+
+                    <input type="password" formControlName="motDePasse" class="input" placeholder="Mot de passe">
+                </div>
+            </div>
+            <a (click)="motDePasseOublie()">Mot de passe oublié?</a>
+            <button type="submit" class="btn d-inline">Connexion</button>
+        </form>
+    </div>
+</div>

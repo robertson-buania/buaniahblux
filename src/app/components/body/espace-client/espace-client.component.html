@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div class="row mt-5">
+        <div class="mt-5 pt-5"></div>
+    </div>
+
+    <h1 *ngIf="clientHblux">
+        Bienvenue sur votre espace privé <span> {{clientHblux.nom}} </span>
+    </h1>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="d-flex justify-content-center align-content-center flex-column">
+                <div>
+                    <a class="btn d-inline-block"> Articles paiementés </a>
+                </div>
+                <div>
+                    <a class="btn d-inline-block"> Mes réservations </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            Les commandes et réservations du client seront ici
+        </div>
+    </div>
+</div>

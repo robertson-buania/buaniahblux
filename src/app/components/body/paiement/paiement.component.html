@@ -1,0 +1,111 @@
+<div class="container ">
+
+    <div class="row mt-5 pt-5">
+        <div class="mt-5 pt-5"></div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5 mb-3 ">
+
+        <h2>Faites votre paiement en toute sécurité, dans la quiétude totale</h2>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-12">
+
+
+            <div class="container">
+                <div class="row" *ngFor="let article of listeArticleCommandees; let i=index">
+                    <div class="row bg-light mx-2">
+                        <div class="col-md-1">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <span class="text-danger"><i style="font-size:2rem;" class="fas fa-trash    "></i></span>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img style="width: 150px; height: 150px;" src="../../../../assets/images/{{article.photos[0].mediaUrl}} " alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h3>{{article.nomArticle}} </h3>
+                            </div>
+
+                        </div>
+                        <div class="col-md-1">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h3> <input type="number" [value]="article.quantite" class=" d-inline-block form-control"> </h3>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h3>£{{article.prix}} </h3>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <h3><strong>{{article.prix * article.quantite}}</strong> </h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-end align-items-md-center">
+                            <p class="prix"><strong>£{{sommeApayer}} </strong></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-12">
+            <div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h4>La caisse HBLUX Boutique</h4>
+                    <p class="lead p-5">
+                        Pour un meilleur suivie de vos transactions, nous vous recommandons de vous compter à votre Compte client, L'inscription sur ce site vous permet d'accéder au statut et à l'historique de vos commandes et réservations.
+
+                    </p>
+                    <div #paypalRef>
+                    </div>
+                    <p *ngIf="message" class="p-5">{{message}} </p>
+                    <div class="row my-4 py-4">
+                        <div class="d-flex justify-content-center  align-items-center ">
+                            <button (click)="seConnecter() " class="mx-5 btn btn-outline-primary">Se connecter</button>
+                            <button (click)="preCommander() " class="mx-5 btn btn-outline-primary">Précommander</button>
+                            <button (click)="payerdirectement() " class="mx-5 btn btn-outline-primary">Payer Directement</button>
+                        </div>
+                    </div>
+                    Paiement
+
+                    <div class="container" *ngIf="payer">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-warning btn-sm"><i class="text-warning fa fa-paypal"
+                                                                aria-hidden="true"></i>PayPal
+              </button>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-primary btn-sm"><i class="text-danger fa-cc-mastercard"
+                                                                aria-hidden="true"></i>Mastercard
+              </button>
+                            </div>
+                            <div class="col-md-4">
+                                <button>MAISHA PAy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
